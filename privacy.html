@@ -28,23 +28,19 @@ footer{margin-top:48px;padding-top:20px;border-top:1px solid #E3D9C8;color:var(-
 </div></header>
 <div class="wrap"><h1 id="tatpass-gizlilik-politikas">TatPass — Gizlilik Politikası</h1>
 <p><strong>Türkiye'nin Lezzet Pasaportu</strong></p>
-<p>Son güncelleme: 26.06.2026
-Yürürlük tarihi: 26.06.2026
-Sürüm: 1.0</p>
+<p>Son güncelleme: 03.07.2026
+Yürürlük tarihi: 03.07.2026
+Sürüm: 1.1</p>
 <hr />
 <h2 id="1-giris-ve-veri-sorumlusu">1. Giriş ve Veri Sorumlusu</h2>
 <p>Bu Gizlilik Politikası, <strong>TatPass</strong> ("TatPass", "Uygulama", "biz", "bize", "bizim") mobil uygulamasını kullanımınız sırasında kişisel verilerinizin nasıl işlendiğini açıklar. TatPass; Türkiye'nin 81 ilinden toplam 545 yöresel yemeği fotoğraflayarak toplamanıza, koleksiyonunuzu (dex) doldurmanıza ve interaktif Türkiye lezzet haritanızı boyamanıza olanak tanıyan, oyunlaştırılmış bir keşif ve koleksiyon uygulamasıdır.</p>
 <p>TatPass; Apple App Store ve Google Play üzerinden dağıtılan, Flutter ile geliştirilmiş (iOS ve Android) bir mobil uygulamadır. Uygulama birincil olarak Türkçe, ikincil olarak İngilizce sunulur.</p>
 <p>Bu politika, 6698 sayılı <strong>Kişisel Verilerin Korunması Kanunu (KVKK)</strong> ve Avrupa Birliği <strong>Genel Veri Koruma Tüzüğü (GDPR)</strong> kapsamındaki yükümlülüklerimizi yansıtacak şekilde hazırlanmıştır.</p>
-<p><strong>Veri Sorumlusu / Geliştirici:</strong> [TatPass / sirket resmi unvani]
-<strong>Adres:</strong> [sirket adresi]
-<strong>KVKK Veri Sorumlusu İletişim:</strong> berkaykirmizioglu@gmail.com
-<strong>Genel İletişim:</strong> berkaykirmizioglu@gmail.com
-<strong>Gizlilik Politikası URL:</strong> https://tatpass.app/privacy
-<strong>Destek URL:</strong> https://tatpass.app/support</p>
-<blockquote>
-<p>Not: Yukarıdaki köşe parantezli alanlar ve tüm <code>tatpass.app</code> alan adı / e-posta adresleri yayın öncesi gerçek, çalışan kutu/sayfalarla doldurulmalıdır [yer tutucu — gerçek değerlerle değiştir].</p>
-</blockquote>
+<p><strong>Veri Sorumlusu / Geliştirici:</strong> Berkay Kırmızıoğlu (bireysel geliştirici — gerçek kişi)
+<strong>İletişim (KVKK başvuruları dahil):</strong> berkaykirmizioglu@gmail.com
+<strong>VERBİS:</strong> Veri sorumlusu bir gerçek kişidir. KVKK Kurulu'nun 2018/32 sayılı kararı kapsamında, yıllık çalışan sayısı 50'den az ve yıllık mali bilanço toplamı ilgili eşiğin altında olan (ve ana faaliyeti özel nitelikli kişisel veri işleme olmayan) gerçek kişi veri sorumluları VERBİS'e kayıt yükümlülüğünden istisna tutulmuştur; bu istisna kapsamındadır.
+<strong>Gizlilik Politikası URL:</strong> https://berkaykirmizioglu.github.io/tatpass-site/privacy.html
+<strong>Destek URL:</strong> https://berkaykirmizioglu.github.io/tatpass-site/support.html</p>
 <hr />
 <h2 id="2-toplanan-veriler">2. Toplanan Veriler</h2>
 <p>Aşağıda hangi verileri, hangi kaynaktan ve hangi amaçla topladığımız açıkça belirtilmiştir. TatPass <strong>veri minimizasyonu</strong> ilkesini benimser: yalnızca hizmetin çalışması için gerekli verileri işleriz.</p>
@@ -89,7 +85,10 @@ Sürüm: 1.0</p>
 </blockquote>
 <h3 id="22-kullanc-icerigi-fotograflar">2.2 Kullanıcı İçeriği (Fotoğraflar)</h3>
 <ul>
-<li><strong>Yemek fotoğrafları:</strong> Bir lezzeti "yakaladığınızda" çektiğiniz veya galeriden seçtiğiniz fotoğraflar. Bu fotoğraflar Supabase Storage'da saklanır ve koleksiyonunuzla ilişkilendirilir.</li>
+<li><strong>Yemek fotoğrafları:</strong> Bir lezzeti "yakaladığınızda" çektiğiniz veya galeriden seçtiğiniz fotoğraflar. Bu fotoğraflar, koleksiyonunuzun bir parçası olarak <strong>hesabınızda kalıcı olarak</strong> saklanır (otomatik bir silme süresi yoktur) ve yakaladığınız yemekle ilişkilendirilir.</li>
+<li>Fotoğraflar <strong>gizli (private) bir depolama alanında</strong> tutulur ve <strong>yalnızca siz</strong> erişebilirsiniz; başka kullanıcılara ya da kamuya açık değildir. Koleksiyonunuzda ilgili yemeğe girdiğinizde, fotoğrafınız yalnızca size küçük bir <strong>önizleme</strong> olarak gösterilir.</li>
+<li><strong>Veri minimizasyonu:</strong> Yüklenen fotoğraf, cihazınızda küçük bir önizleme boyutuna (≈35 KB) sıkıştırılır ve <strong>konum/EXIF meta verileri kaldırılır</strong> (fotoğrafla birlikte konum sızıntısı olmaz). Yemek tanıma tamamen <strong>cihaz içinde</strong> çalışır; tanıma amacıyla fotoğrafınız sunucuya gönderilmez.</li>
+<li>Fotoğraflarınız, hesabınızı sildiğinizde tüm ilişkili verilerle birlikte <strong>kalıcı olarak silinir</strong> (Bölüm 7).</li>
 <li>Fotoğraflara erişmek için <strong>kamera</strong> ve <strong>fotoğraf galerisi</strong> izinleri kullanılır. Bu izinler yalnızca siz bir fotoğraf çektiğinizde veya seçtiğinizde devreye girer.</li>
 </ul>
 <h3 id="23-konum-verileri-opsiyonel">2.3 Konum Verileri (opsiyonel)</h3>
@@ -208,7 +207,7 @@ Sürüm: 1.0</p>
 <td><strong>Supabase</strong></td>
 <td>Veritabanı (Postgres), kimlik doğrulama (Auth) ve dosya depolama (Storage)</td>
 <td>Hesap, fotoğraf, konum, oyun verileri</td>
-<td>Sunucu bölgesi: [Supabase bolgesi, or. AB]</td>
+<td>Sunucu bölgesi: AB — Frankfurt (eu-central-1)</td>
 </tr>
 <tr>
 <td><strong>Google OAuth</strong></td>
@@ -236,9 +235,9 @@ Sürüm: 1.0</p>
 <h2 id="5-veri-saklama-sureleri">5. Veri Saklama Süreleri</h2>
 <ul>
 <li><strong>Hesap ve oyun verileri:</strong> Hesabınız aktif olduğu sürece saklanır.</li>
-<li><strong>Fotoğraflar:</strong> Siz silene veya hesabınızı kapatana kadar saklanır.</li>
+<li><strong>Fotoğraflar:</strong> Koleksiyonunuzun bir parçası olarak, siz silene veya hesabınızı kapatana kadar <strong>kalıcı</strong> olarak saklanır; otomatik (ör. süreye bağlı) bir silme uygulanmaz. Hesabınızı sildiğinizde tüm fotoğraflarınız da silinir (Bölüm 7).</li>
 <li><strong>Konum verileri:</strong> Yakalama kaydıyla ilişkili olarak, ilgili yakalama silininceye veya hesabınız silininceye kadar saklanır.</li>
-<li><strong>Hesap silindiğinde:</strong> Aşağıda (Bölüm 7) belirtildiği şekilde verileriniz silinir; teknik yedeklerden makul süre içinde (en geç [30] gün) temizlenir.</li>
+<li><strong>Hesap silindiğinde:</strong> Aşağıda (Bölüm 7) belirtildiği şekilde verileriniz silinir; teknik yedeklerden makul süre içinde (en geç 30 gün) temizlenir.</li>
 <li><strong>Yasal yükümlülük:</strong> Belirli verilerin daha uzun saklanması gerektiren yasal bir zorunluluk varsa, yalnızca o süre ve amaca bağlı olarak saklanır.</li>
 </ul>
 <hr />
@@ -277,7 +276,7 @@ g) Münhasıran otomatik sistemlerle analiz edilmesi suretiyle aleyhinize bir so
    - Koleksiyon, XP, seviye, rozet, streak ve harita ilerleme verileriniz,
    - Yakalama konum kayıtlarınız.</li>
 </ol>
-<p>Silme işlemi tamamlandığında oturumunuz kapatılır. Veriler aktif sistemlerden derhal, yedeklerden ise en geç <strong>[30] gün</strong> içinde kalıcı olarak kaldırılır. Bazı veriler yalnızca yasal yükümlülük gereği ve yalnızca gerekli süre boyunca anonim/sınırlı biçimde tutulabilir.</p>
+<p>Silme işlemi tamamlandığında oturumunuz kapatılır. Veriler aktif sistemlerden derhal, yedeklerden ise en geç <strong>30 gün</strong> içinde kalıcı olarak kaldırılır. Bazı veriler yalnızca yasal yükümlülük gereği ve yalnızca gerekli süre boyunca anonim/sınırlı biçimde tutulabilir.</p>
 <h3 id="72-alternatif-silme-talebi">7.2 Alternatif Silme Talebi</h3>
 <p>Uygulamaya erişemiyorsanız, hesabınızı silmek için kayıtlı e-posta adresinizden <strong>berkaykirmizioglu@gmail.com</strong> adresine talep gönderebilirsiniz. Kimlik doğrulamasının ardından talebiniz işlenir.</p>
 <hr />
@@ -328,7 +327,7 @@ g) Münhasıran otomatik sistemlerle analiz edilmesi suretiyle aleyhinize bir so
 </tr>
 <tr>
 <td>Veri Sorumlusu</td>
-<td>[TatPass / sirket resmi unvani], [adres]</td>
+<td>Berkay Kırmızıoğlu (bireysel geliştirici — gerçek kişi)</td>
 </tr>
 </tbody>
 </table>
@@ -338,7 +337,7 @@ g) Münhasıran otomatik sistemlerle analiz edilmesi suretiyle aleyhinize bir so
 <p>TatPass ("Turkey's Flavor Passport") is a gamified food discovery and collection app where you photograph Turkey's 545 regional dishes, build your dex, and color your interactive flavor map.</p>
 <ul>
 <li><strong>Sign-in:</strong> Optional (guest-first). You can continue as a guest (anonymous) or sign in with Google. No email/password; no Apple sign-in.</li>
-<li><strong>Data we collect:</strong> When you sign in with Google, account info (name, email, avatar); the food photos you capture (stored in Supabase Storage); capture location (latitude/longitude, only with your permission) used to detect your province and, optionally, to search nearby places. We also collect basic game/progress and technical/crash data. Guests are identified only by an anonymous user ID.</li>
+<li><strong>Data we collect:</strong> When you sign in with Google, account info (name, email, avatar); the food photos you capture (stored <strong>privately and permanently</strong> as part of your collection, visible only to you as a small preview; ultra-compressed and stripped of location/EXIF metadata; recognition runs entirely on-device; deleted when you delete your account); capture location (latitude/longitude, only with your permission) used to detect your province and, optionally, to search nearby places. We also collect basic game/progress and technical/crash data. Guests are identified only by an anonymous user ID.</li>
 <li><strong>Optional place search:</strong> Uses <strong>Foursquare</strong> (third-party POI provider; data transfer abroad). "Eaten around here" venues are shown only as aggregated, anonymous counts above a small k-anonymity threshold.</li>
 <li><strong>No ad tracking, no third-party ad SDKs, no data selling.</strong> No ads or subscriptions at launch.</li>
 <li><strong>Processors:</strong> Supabase (database, auth, storage), Google OAuth (sign-in), Foursquare (optional place search), Resend (lifecycle emails). Some processing may occur outside your country under appropriate safeguards (SCCs).</li>
@@ -350,7 +349,7 @@ g) Münhasıran otomatik sistemlerle analiz edilmesi suretiyle aleyhinize bir so
 <p>The Turkish version above is the authoritative text.</p>
 <hr />
 <h1 id="kullanm-kosullar-terms-of-service-taslak">Kullanım Koşulları (Terms of Service) — Taslak</h1>
-<p>Son güncelleme: 26.06.2026</p>
+<p>Son güncelleme: 03.07.2026</p>
 <h3 id="1-taraflar-ve-kabul">1. Taraflar ve Kabul</h3>
 <p>Bu Kullanım Koşulları ("Koşullar"), TatPass uygulamasını ("Hizmet") kullanımınızı düzenler. Uygulamayı indirerek, hesap oluşturarak veya kullanarak bu Koşulları ve Gizlilik Politikası'nı kabul etmiş sayılırsınız. Kabul etmiyorsanız Hizmeti kullanmayın.</p>
 <h3 id="2-hizmetin-tanm">2. Hizmetin Tanımı</h3>
@@ -378,7 +377,7 @@ g) Münhasıran otomatik sistemlerle analiz edilmesi suretiyle aleyhinize bir so
 <h3 id="9-hesabn-sonlandrlmas">9. Hesabın Sonlandırılması</h3>
 <p>Bu Koşulları ihlal etmeniz halinde hesabınızı askıya alabilir veya kapatabiliriz. Siz de hesabınızı dilediğiniz zaman uygulama içinden (Profil &gt; Ayarlar &gt; Hesabı Sil) silebilirsiniz.</p>
 <h3 id="10-uygulanacak-hukuk-ve-uyusmazlk">10. Uygulanacak Hukuk ve Uyuşmazlık</h3>
-<p>Bu Koşullar [Türkiye Cumhuriyeti] hukukuna tabidir. Uyuşmazlıklarda [İstanbul] mahkemeleri ve icra daireleri yetkilidir. Tüketici mevzuatından doğan haklarınız saklıdır.</p>
+<p>Bu Koşullar Türkiye Cumhuriyeti hukukuna tabidir. Uyuşmazlıklarda, veri sorumlusunun yerleşim yerindeki Türkiye Cumhuriyeti mahkemeleri ve icra daireleri yetkilidir. Tüketici mevzuatından doğan haklarınız saklıdır.</p>
 <h3 id="11-degisiklikler">11. Değişiklikler</h3>
 <p>Bu Koşulları güncelleyebiliriz; önemli değişiklikler uygulama içi veya e-posta ile bildirilir. Güncel sürüm https://tatpass.app/terms adresinde yayınlanır.</p>
 <h3 id="12-iletisim">12. İletişim</h3>
