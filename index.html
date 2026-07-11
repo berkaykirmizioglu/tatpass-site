@@ -1,46 +1,55 @@
-<!doctype html><html lang="tr"><head><meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Ana Sayfa — TatPass</title>
-<meta name="description" content="TatPass — Türkiye'nin Lezzet Pasaportu. Ana Sayfa.">
-<style>
-:root{--pom:#B5291F;--pomdark:#7E160F;--cream:#FFFBF5;--ink:#2A1A14;--ink2:#5E5048;--saf:#F2A900}
-*{box-sizing:border-box}body{margin:0;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;
-background:var(--cream);color:var(--ink);line-height:1.65;-webkit-text-size-adjust:100%}
-.wrap{max-width:760px;margin:0 auto;padding:24px 20px 64px}
-header.site{background:linear-gradient(135deg,var(--pom),var(--pomdark));color:#fff;padding:28px 20px}
-header.site .wrap{padding:0;max-width:760px}
-.brand{font-size:28px;font-weight:900;letter-spacing:.5px}
-.tag{opacity:.9;font-size:14px;margin-top:4px}
-nav{margin-top:14px}nav a{color:#fff;text-decoration:none;font-weight:700;font-size:14px;margin-right:18px;opacity:.92;border-bottom:2px solid transparent;padding-bottom:2px}
-nav a:hover{opacity:1;border-color:var(--saf)}
-h1{font-size:26px;margin:8px 0 4px}h2{font-size:20px;margin-top:32px;color:var(--pomdark)}h3{font-size:16px;margin-top:22px}
-a{color:var(--pom)}table{border-collapse:collapse;width:100%;margin:16px 0;font-size:14px}
-th,td{border:1px solid #E3D9C8;padding:8px 10px;text-align:left}th{background:#F7F2EA}
-code{background:#F7F2EA;padding:2px 5px;border-radius:4px;font-size:.92em}
-hr{border:none;border-top:1px solid #E3D9C8;margin:28px 0}
-.muted{color:var(--ink2);font-size:13px}.updated{color:var(--ink2);font-size:13px;margin-top:2px}
-footer{margin-top:48px;padding-top:20px;border-top:1px solid #E3D9C8;color:var(--ink2);font-size:13px}
-.card{background:#fff;border:1px solid #E3D9C8;border-radius:16px;padding:20px;margin:18px 0}
-</style></head><body>
-<header class="site"><div class="wrap">
-<div class="brand">TatPass</div><div class="tag">Türkiye'nin Lezzet Pasaportu</div>
-<nav><a href="index.html" style="border-color:var(--saf);opacity:1">Ana Sayfa</a><a href="privacy.html">Gizlilik</a><a href="support.html">Destek</a></nav>
-</div></header>
-<div class="wrap">
-<h1>TatPass</h1>
-<p style="font-size:17px">Türkiye'nin 81 ilinden <b>545 yöresel yemeği</b> fotoğraflayarak topla. Her tabak bir damga, her şehir bir durak — lezzet pasaportunu doldur.</p>
-<div class="card">
-<p>📍 Gerçek bir Pokédex mantığıyla yöresel yemek koleksiyonu<br>
-🗺️ İl il dolup renklenen lezzet haritası<br>
-🏅 XP, seviye, rozet ve seri (streak)<br>
-🍽️ İsteğe bağlı "nerede yedin" ve topluluğun favori mekanları</p>
-</div>
-<h2>Yasal & Destek</h2>
-<ul>
-<li><a href="privacy.html">Gizlilik Politikası</a></li>
-<li><a href="support.html">Destek & SSS</a></li>
-<li>İletişim: <a href="mailto:berkaykirmizioglu@gmail.com">berkaykirmizioglu@gmail.com</a></li>
-</ul>
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>TatPass — Türkiye&#x27;nin Lezzet Pasaportu</title>
+<meta name="description" content="TatPass — Türkiye'nin Lezzet Pasaportu. 81 ilden 545 yöresel lezzeti yakala, topla, haritanı boya.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="site-header">
+  <a class="brand" href="index.html"><span class="brand-mark">T</span> TatPass</a>
+  <nav class="site-nav">
+    <a href="index.html" class="active">Ana Sayfa</a>
+    <a href="support.html">Destek</a>
+    <a href="privacy.html">Gizlilik</a>
+  </nav>
+</header>
+<main>
 
-<footer>© 2026 TatPass · İletişim: <a href="mailto:berkaykirmizioglu@gmail.com">berkaykirmizioglu@gmail.com</a></footer>
-</div></body></html>
+<section class="hero">
+  <div class="logo">T</div>
+  <h1>TatPass</h1>
+  <p class="tag">Türkiye'nin Lezzet Pasaportu</p>
+  <p class="lead">81 ilden 545 yöresel lezzeti yakala, koleksiyonunu doldur ve
+  Türkiye lezzet haritanı boya. Yediğini fotoğrafla, ilini işaretle, seviye atla.
+  Ücretsiz, reklamsız.</p>
+  <div class="cta-row">
+    <a class="btn primary" href="#indir">App Store'da yakında</a>
+    <a class="btn ghost" href="support.html">Destek</a>
+  </div>
+</section>
+
+<section class="features">
+  <div class="feature"><h3>📸 Yakala</h3><p>Yediğin yöresel yemeği fotoğrafla; cihaz-içi akıllı öneri tahmin etsin, sen onayla.</p></div>
+  <div class="feature"><h3>🧩 Topla</h3><p>545 yöresel lezzetin koleksiyonunu doldur; nadir ve efsanevi tatları avla.</p></div>
+  <div class="feature"><h3>🗺️ Boya</h3><p>Topladıkça iller renklensin; interaktif Türkiye lezzet haritanı tamamla.</p></div>
+  <div class="feature"><h3>🏅 Yüksel</h3><p>XP kazan, seviye atla, rozet ve seri biriktir.</p></div>
+  <div class="feature"><h3>📍 Nerede yedin?</h3><p>İstersen mekanı etiketle; topluluğun en çok yakaladığı yerleri keşfet.</p></div>
+  <div class="feature"><h3>🔒 Gizlilik</h3><p>Fotoğrafların sana özel. Reklam yok, takip yok. <a href="privacy.html">Gizlilik politikası</a>.</p></div>
+</section>
+
+<section id="indir" style="text-align:center;margin-top:12px">
+  <h2 style="border:none">Yakında App Store'da</h2>
+  <p class="lead" style="margin:0 auto">Sorular ve geri bildirim için:
+  <a href="mailto:berkaykirmizioglu@gmail.com">berkaykirmizioglu@gmail.com</a></p>
+</section>
+
+</main>
+<footer class="site-footer">
+  <p>© 2026 Berkay Kırmızıoğlu · TatPass · Türkiye'nin Lezzet Pasaportu</p>
+  <p><a href="mailto:berkaykirmizioglu@gmail.com">berkaykirmizioglu@gmail.com</a> · <a href="privacy.html">Gizlilik</a> · <a href="support.html">Destek</a></p>
+</footer>
+</body>
+</html>
